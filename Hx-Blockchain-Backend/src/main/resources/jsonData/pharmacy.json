@@ -1,0 +1,6 @@
+{
+  "$class": "org.acme.model.Pharmacy",
+  "pharmacyId": "PHARM001",
+  "name": "First Pharmacy",
+  "prePermissions": ["ADMIN1"]
+}

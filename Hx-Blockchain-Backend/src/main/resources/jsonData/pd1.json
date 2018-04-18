@@ -1,0 +1,16 @@
+{
+  "$class": "org.acme.model.PersonalDetails",
+  "detailsId": "Details001",
+  "owner": "resource:org.acme.model.Patient#PATIENT001",
+  "firstName": "Nixon",
+  "lastName": "Chan",
+  "email": "nixon@hx.com",
+  "dob": "01/01/1994",
+  "address": {
+    "$class": "org.acme.model.Address",
+    "street": "21 Lower Kent Ridge Road",
+    "postcode": "118430",
+    "country": "Singapore"
+  },
+  "contact": "98766789"
+}

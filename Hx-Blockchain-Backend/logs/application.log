@@ -1,0 +1,962 @@
+"2018-04-17 20:53:58 [main] INFO  c.i.h.HealthcareBlockchainApplication - Starting HealthcareBlockchainApplication on Lenovo-PC with PID 9852 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 20:53:58 [main] INFO  c.i.h.HealthcareBlockchainApplication - No active profile set, falling back to default profiles: default
+""2018-04-17 20:53:58 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e2a57f6: startup date [Tue Apr 17 20:53:58 SGT 2018]; root of context hierarchy
+""2018-04-17 20:54:02 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aab61042] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 20:54:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+""2018-04-17 20:54:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-04-17 20:54:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+""2018-04-17 20:54:03 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Brackets\command;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\HashiCorp\Vagrant\bin;C:\Users\Kenneth\Downloads\apache-maven-3.3.9\bin;C:\Users\Kenneth\AppData\Roaming\npm;C:\Users\Kenneth\AppData\Local\Microsoft\WindowsApps;;.]
+""2018-04-17 20:54:04 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-04-17 20:54:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-04-17 20:54:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-04-17 20:54:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-04-17 20:54:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-04-17 20:54:04 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2018-04-17 20:54:04 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+""2018-04-17 20:54:04 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2-console/*]
+""2018-04-17 20:54:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 20:54:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 20:54:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 20:54:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 20:54:07 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 20:54:07 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 19 ms.
+""2018-04-17 20:54:08 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postApplicationStartup' defined in file [C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain\target\classes\com\is4302\healthcareblockchain\PostApplicationStartup.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.is4302.healthcareblockchain.PostApplicationStartup$$EnhancerBySpringCGLIB$$89d3882b]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The declared package "" does not match the expected package "com.is4302.healthcareblockchain"
+
+""2018-04-17 20:54:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 20:54:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 20:54:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 20:54:08 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+""2018-04-17 20:54:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""2018-04-17 20:54:08 [main] ERROR o.s.boot.SpringApplication - Application run failed
+"org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postApplicationStartup' defined in file [C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain\target\classes\com\is4302\healthcareblockchain\PostApplicationStartup.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.is4302.healthcareblockchain.PostApplicationStartup$$EnhancerBySpringCGLIB$$89d3882b]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The declared package "" does not match the expected package "com.is4302.healthcareblockchain"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.is4302.healthcareblockchain.HealthcareBlockchainApplication.main(HealthcareBlockchainApplication.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:496)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.is4302.healthcareblockchain.PostApplicationStartup$$EnhancerBySpringCGLIB$$89d3882b]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The declared package "" does not match the expected package "com.is4302.healthcareblockchain"
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:182)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1224)
+	... 23 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The declared package "" does not match the expected package "com.is4302.healthcareblockchain"
+
+	at com.is4302.healthcareblockchain.PostApplicationStartup.<init>(PostApplicationStartup.java:1)
+	at com.is4302.healthcareblockchain.PostApplicationStartup$$EnhancerBySpringCGLIB$$89d3882b.<init>(<generated>)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:170)
+	... 25 common frames omitted
+"2018-04-17 20:54:55 [main] INFO  c.i.h.HealthcareBlockchainApplication - Starting HealthcareBlockchainApplication on Lenovo-PC with PID 6048 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 20:54:55 [main] INFO  c.i.h.HealthcareBlockchainApplication - No active profile set, falling back to default profiles: default
+""2018-04-17 20:54:55 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a683f9b: startup date [Tue Apr 17 20:54:55 SGT 2018]; root of context hierarchy
+""2018-04-17 20:54:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ed107c71] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 20:54:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+""2018-04-17 20:54:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-04-17 20:54:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+""2018-04-17 20:54:58 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Brackets\command;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\HashiCorp\Vagrant\bin;C:\Users\Kenneth\Downloads\apache-maven-3.3.9\bin;C:\Users\Kenneth\AppData\Roaming\npm;C:\Users\Kenneth\AppData\Local\Microsoft\WindowsApps;;.]
+""2018-04-17 20:54:59 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-04-17 20:54:59 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-04-17 20:54:59 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-04-17 20:54:59 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-04-17 20:54:59 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-04-17 20:54:59 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2018-04-17 20:54:59 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+""2018-04-17 20:54:59 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2-console/*]
+""2018-04-17 20:54:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 20:54:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 20:54:59 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 20:55:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 20:55:02 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 20:55:02 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 12 ms.
+""2018-04-17 20:55:03 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 20:55:04 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@725049a, org.springframework.security.web.context.SecurityContextPersistenceFilter@293c28c9, org.springframework.security.web.header.HeaderWriterFilter@71a66f2b, org.springframework.web.filter.CorsFilter@3996056a, org.springframework.security.web.authentication.logout.LogoutFilter@6c40a4ff, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5af73373, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@37b449ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1934c4f7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ed0e97b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@388ecbc7, org.springframework.security.web.session.SessionManagementFilter@3b92704c, org.springframework.security.web.access.ExceptionTranslationFilter@2f9e08e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@783f7ee8]
+""2018-04-17 20:55:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-04-17 20:55:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-04-17 20:55:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-04-17 20:55:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path ''
+""2018-04-17 20:55:05 [main] INFO  c.i.h.HealthcareBlockchainApplication - Started HealthcareBlockchainApplication in 10.591 seconds (JVM running for 17.385)
+""2018-04-17 21:00:11 [Thread-5] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a683f9b: startup date [Tue Apr 17 20:54:55 SGT 2018]; root of context hierarchy
+""2018-04-17 21:00:11 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-04-17 21:00:11 [Thread-5] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-04-17 21:00:11 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 21:00:11 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 21:00:11 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 21:00:38 [main] INFO  c.i.h.HealthcareBlockchainApplication - Starting HealthcareBlockchainApplication on Lenovo-PC with PID 9524 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 21:00:38 [main] INFO  c.i.h.HealthcareBlockchainApplication - No active profile set, falling back to default profiles: default
+""2018-04-17 21:00:38 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f102aa8: startup date [Tue Apr 17 21:00:38 SGT 2018]; root of context hierarchy
+""2018-04-17 21:00:41 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3193c079] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 21:00:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+""2018-04-17 21:00:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-04-17 21:00:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+""2018-04-17 21:00:42 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Brackets\command;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\HashiCorp\Vagrant\bin;C:\Users\Kenneth\Downloads\apache-maven-3.3.9\bin;C:\Users\Kenneth\AppData\Roaming\npm;C:\Users\Kenneth\AppData\Local\Microsoft\WindowsApps;;.]
+""2018-04-17 21:00:42 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-04-17 21:00:42 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-04-17 21:00:42 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-04-17 21:00:42 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-04-17 21:00:42 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-04-17 21:00:42 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2018-04-17 21:00:42 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+""2018-04-17 21:00:42 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2-console/*]
+""2018-04-17 21:00:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 21:00:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 21:00:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 21:00:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 21:00:45 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 21:00:45 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 12 ms.
+""2018-04-17 21:00:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 21:00:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61c9567f, org.springframework.security.web.context.SecurityContextPersistenceFilter@d33281b, org.springframework.security.web.header.HeaderWriterFilter@9f49cfd, org.springframework.web.filter.CorsFilter@73b42538, org.springframework.security.web.authentication.logout.LogoutFilter@271cc60f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@601a529f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c5a17f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43d7399, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2528f71e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a617f59, org.springframework.security.web.session.SessionManagementFilter@55da9292, org.springframework.security.web.access.ExceptionTranslationFilter@779586b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ef8b956]
+""2018-04-17 21:00:47 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-04-17 21:00:47 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-04-17 21:00:47 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-04-17 21:00:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path ''
+""2018-04-17 21:00:47 [main] INFO  c.i.h.HealthcareBlockchainApplication - Started HealthcareBlockchainApplication in 9.591 seconds (JVM running for 16.797)
+""2018-04-17 21:06:26 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f102aa8: startup date [Tue Apr 17 21:00:38 SGT 2018]; root of context hierarchy
+""2018-04-17 21:06:26 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-04-17 21:06:26 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-04-17 21:06:26 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 21:06:26 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 21:06:26 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 21:06:36 [main] INFO  c.i.h.HealthcareBlockchainApplication - Starting HealthcareBlockchainApplication on Lenovo-PC with PID 7040 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 21:06:36 [main] INFO  c.i.h.HealthcareBlockchainApplication - No active profile set, falling back to default profiles: default
+""2018-04-17 21:06:36 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d627c71: startup date [Tue Apr 17 21:06:36 SGT 2018]; root of context hierarchy
+""2018-04-17 21:06:38 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4da50aa7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 21:06:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+""2018-04-17 21:06:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-04-17 21:06:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+""2018-04-17 21:06:39 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Brackets\command;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\HashiCorp\Vagrant\bin;C:\Users\Kenneth\Downloads\apache-maven-3.3.9\bin;C:\Users\Kenneth\AppData\Roaming\npm;C:\Users\Kenneth\AppData\Local\Microsoft\WindowsApps;;.]
+""2018-04-17 21:06:39 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-04-17 21:06:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-04-17 21:06:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-04-17 21:06:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-04-17 21:06:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-04-17 21:06:39 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2018-04-17 21:06:39 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+""2018-04-17 21:06:39 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2-console/*]
+""2018-04-17 21:06:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 21:06:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 21:06:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 21:06:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 21:06:42 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 21:06:42 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 14 ms.
+""2018-04-17 21:06:43 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 21:06:44 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e76e4ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b4ecfef, org.springframework.security.web.header.HeaderWriterFilter@382dfb03, org.springframework.web.filter.CorsFilter@50ccf49a, org.springframework.security.web.authentication.logout.LogoutFilter@43985208, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e0b365d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4b2d7a61, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a7fbda6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@139b1247, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@538d3b52, org.springframework.security.web.session.SessionManagementFilter@3a4f8642, org.springframework.security.web.access.ExceptionTranslationFilter@72a509c1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@370dd25a]
+""2018-04-17 21:06:44 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-04-17 21:06:44 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-04-17 21:06:44 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-04-17 21:06:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path ''
+""2018-04-17 21:06:45 [main] INFO  c.i.h.HealthcareBlockchainApplication - Started HealthcareBlockchainApplication in 9.614 seconds (JVM running for 16.579)
+""2018-04-17 21:10:02 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d627c71: startup date [Tue Apr 17 21:06:36 SGT 2018]; root of context hierarchy
+""2018-04-17 21:10:02 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-04-17 21:10:02 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-04-17 21:10:02 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 21:10:02 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 21:10:02 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 21:10:14 [main] INFO  c.i.h.HealthcareBlockchainApplication - Starting HealthcareBlockchainApplication on Lenovo-PC with PID 15660 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 21:10:14 [main] INFO  c.i.h.HealthcareBlockchainApplication - No active profile set, falling back to default profiles: default
+""2018-04-17 21:10:14 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4040eb8a: startup date [Tue Apr 17 21:10:14 SGT 2018]; root of context hierarchy
+""2018-04-17 21:10:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$abcfe0e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 21:10:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+""2018-04-17 21:10:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-04-17 21:10:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+""2018-04-17 21:10:17 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Brackets\command;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\HashiCorp\Vagrant\bin;C:\Users\Kenneth\Downloads\apache-maven-3.3.9\bin;C:\Users\Kenneth\AppData\Roaming\npm;C:\Users\Kenneth\AppData\Local\Microsoft\WindowsApps;;.]
+""2018-04-17 21:10:17 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-04-17 21:10:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-04-17 21:10:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-04-17 21:10:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-04-17 21:10:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-04-17 21:10:18 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2018-04-17 21:10:18 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+""2018-04-17 21:10:18 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2-console/*]
+""2018-04-17 21:10:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 21:10:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 21:10:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 21:10:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 21:10:20 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 21:10:20 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 13 ms.
+""2018-04-17 21:10:21 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 21:10:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d285091, org.springframework.security.web.context.SecurityContextPersistenceFilter@2528f71e, org.springframework.security.web.header.HeaderWriterFilter@464c17ce, org.springframework.web.filter.CorsFilter@233d053, org.springframework.security.web.authentication.logout.LogoutFilter@65bbfd74, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d59c8f3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7f8c71b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@710e5f41, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bf3237e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1791c0c5, org.springframework.security.web.session.SessionManagementFilter@6e4ea168, org.springframework.security.web.access.ExceptionTranslationFilter@43d7399, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@601a529f]
+""2018-04-17 21:10:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-04-17 21:10:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-04-17 21:10:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-04-17 21:10:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path ''
+""2018-04-17 21:10:22 [main] INFO  c.i.h.HealthcareBlockchainApplication - Started HealthcareBlockchainApplication in 9.221 seconds (JVM running for 17.574)
+""2018-04-17 21:23:30 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4040eb8a: startup date [Tue Apr 17 21:10:14 SGT 2018]; root of context hierarchy
+""2018-04-17 21:23:30 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-04-17 21:23:30 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-04-17 21:23:30 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 21:23:30 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 21:23:30 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 22:21:10 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Kenneth/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Kenneth/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+""2018-04-17 22:21:10 [main] INFO  c.i.h.HealthcareBlockchainApplicationTests - Starting HealthcareBlockchainApplicationTests on Lenovo-PC with PID 12108 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 22:21:10 [main] INFO  c.i.h.HealthcareBlockchainApplicationTests - No active profile set, falling back to default profiles: default
+""2018-04-17 22:21:12 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$28fb2878] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 22:21:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 22:21:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 22:21:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:21:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:21:15 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 22:21:15 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 15 ms.
+""2018-04-17 22:21:17 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 22:21:17 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@514377fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@27e44e9c, org.springframework.security.web.header.HeaderWriterFilter@1e495414, org.springframework.web.filter.CorsFilter@2e4eda17, org.springframework.security.web.authentication.logout.LogoutFilter@597d48ca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15369d73, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7911cc15, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1bee0085, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b06d46d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b5021d1, org.springframework.security.web.session.SessionManagementFilter@646d810b, org.springframework.security.web.access.ExceptionTranslationFilter@20cff21e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20216016]
+""2018-04-17 22:21:19 [main] INFO  c.i.h.HealthcareBlockchainApplicationTests - Started HealthcareBlockchainApplicationTests in 9.463 seconds (JVM running for 11.735)
+""2018-04-17 22:21:19 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.is4302.healthcareblockchain.UserRepositoryTest], using SpringBootContextLoader
+""2018-04-17 22:21:19 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.is4302.healthcareblockchain.UserRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2018-04-17 22:21:19 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.is4302.healthcareblockchain.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+""2018-04-17 22:21:19 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.is4302.healthcareblockchain.HealthcareBlockchainApplication for test class com.is4302.healthcareblockchain.UserRepositoryTest
+""2018-04-17 22:21:19 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+""2018-04-17 22:21:19 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6b126187, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2b6262bc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5cffec7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7e81617a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e73974, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3e28dc96, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@44eb2452, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@31940704, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@e07b4db, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@76b305e1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6be766d1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7adae08e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@49c83262, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@273aaab7]
+""2018-04-17 22:21:19 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Kenneth/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Kenneth/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+""2018-04-17 22:21:19 [main] INFO  c.i.h.UserRepositoryTest - Starting UserRepositoryTest on Lenovo-PC with PID 12108 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 22:21:19 [main] INFO  c.i.h.UserRepositoryTest - No active profile set, falling back to default profiles: default
+""2018-04-17 22:21:19 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2dd3d39d: startup date [Tue Apr 17 22:21:19 SGT 2018]; root of context hierarchy
+""2018-04-17 22:21:20 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+""2018-04-17 22:21:20 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+""2018-04-17 22:21:20 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:ed3a548b-e921-4cbc-bb76-36ce3410dee7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+""2018-04-17 22:21:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:21:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:21:20 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 22:21:20 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 9 ms.
+""2018-04-17 22:21:20 [main] INFO  c.i.h.UserRepositoryTest - Started UserRepositoryTest in 1.042 seconds (JVM running for 13.398)
+""2018-04-17 22:21:21 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@5501d1c8 testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@652b3733, testMethod = whenFindByUsername_thenReturnUser@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7b598d05 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@6cc8c13c key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@543e710e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6366ebe0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@5d08976a, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4fc5ccd2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@517cd4b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@61c87f1b]; rollback [true]
+""2018-04-17 22:21:21 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@5501d1c8 testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@652b3733, testMethod = whenFindByUsername_thenReturnUser@UserRepositoryTest, testException = java.lang.NullPointerException, mergedContextConfiguration = [MergedContextConfiguration@7b598d05 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@6cc8c13c key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@543e710e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6366ebe0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@5d08976a, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4fc5ccd2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@517cd4b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]].
+""2018-04-17 22:21:21 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@5501d1c8 testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@4eb1943b, testMethod = whenFindByUnknownUsername_thenReturnNull@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7b598d05 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@6cc8c13c key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@543e710e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6366ebe0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@5d08976a, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4fc5ccd2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@517cd4b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@61c87f1b]; rollback [true]
+""2018-04-17 22:21:21 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@5501d1c8 testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@4eb1943b, testMethod = whenFindByUnknownUsername_thenReturnNull@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7b598d05 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@6cc8c13c key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@543e710e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6366ebe0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@5d08976a, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4fc5ccd2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@517cd4b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]].
+""2018-04-17 22:21:21 [Thread-5] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2dd3d39d: startup date [Tue Apr 17 22:21:19 SGT 2018]; root of context hierarchy
+""2018-04-17 22:21:21 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:21:21 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:21:21 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 22:21:21 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 22:24:24 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Kenneth/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Kenneth/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+""2018-04-17 22:24:24 [main] INFO  c.i.h.HealthcareBlockchainApplicationTests - Starting HealthcareBlockchainApplicationTests on Lenovo-PC with PID 11672 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 22:24:24 [main] INFO  c.i.h.HealthcareBlockchainApplicationTests - No active profile set, falling back to default profiles: default
+""2018-04-17 22:24:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5338f222] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 22:24:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 22:24:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 22:24:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:24:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:24:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 22:24:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 27 ms.
+""2018-04-17 22:24:31 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 22:24:32 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4662752a, org.springframework.security.web.context.SecurityContextPersistenceFilter@30508066, org.springframework.security.web.header.HeaderWriterFilter@22a4ca4a, org.springframework.web.filter.CorsFilter@693f2213, org.springframework.security.web.authentication.logout.LogoutFilter@242ff747, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@25699aa7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@25a5c8e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27e44e9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5403907, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@514377fc, org.springframework.security.web.session.SessionManagementFilter@3711c71c, org.springframework.security.web.access.ExceptionTranslationFilter@458031da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ae8fb2a]
+""2018-04-17 22:24:33 [main] INFO  c.i.h.HealthcareBlockchainApplicationTests - Started HealthcareBlockchainApplicationTests in 9.906 seconds (JVM running for 11.326)
+""2018-04-17 22:24:33 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.is4302.healthcareblockchain.UserRepositoryTest], using SpringBootContextLoader
+""2018-04-17 22:24:33 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.is4302.healthcareblockchain.UserRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2018-04-17 22:24:33 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.is4302.healthcareblockchain.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+""2018-04-17 22:24:34 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.is4302.healthcareblockchain.HealthcareBlockchainApplication for test class com.is4302.healthcareblockchain.UserRepositoryTest
+""2018-04-17 22:24:34 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+""2018-04-17 22:24:34 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3193e21d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@79604abe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6b126187, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2b6262bc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5cffec7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e81617a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6e73974, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3e28dc96, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@44eb2452, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31940704, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@e07b4db, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76b305e1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6be766d1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7adae08e]
+""2018-04-17 22:24:34 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Kenneth/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Kenneth/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+""2018-04-17 22:24:34 [main] INFO  c.i.h.UserRepositoryTest - Starting UserRepositoryTest on Lenovo-PC with PID 11672 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 22:24:34 [main] INFO  c.i.h.UserRepositoryTest - No active profile set, falling back to default profiles: default
+""2018-04-17 22:24:34 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@a2df0d5: startup date [Tue Apr 17 22:24:34 SGT 2018]; root of context hierarchy
+""2018-04-17 22:24:34 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+""2018-04-17 22:24:34 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+""2018-04-17 22:24:34 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:89449565-2ef3-4ef2-bb5b-74eb2eaff004;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+""2018-04-17 22:24:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:24:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:24:35 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 22:24:35 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 43 ms.
+""2018-04-17 22:24:35 [main] INFO  c.i.h.UserRepositoryTest - Started UserRepositoryTest in 1.273 seconds (JVM running for 12.991)
+""2018-04-17 22:24:35 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@6e7e0259 testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@646e6d07, testMethod = whenFindByUsername_thenReturnUser@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5501d1c8 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@652b3733 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@543e710e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6366ebe0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3dfe59d7, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4fc5ccd2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@517cd4b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@214fba74]; rollback [true]
+""2018-04-17 22:24:36 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@6e7e0259 testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@646e6d07, testMethod = whenFindByUsername_thenReturnUser@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5501d1c8 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@652b3733 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@543e710e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6366ebe0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3dfe59d7, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4fc5ccd2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@517cd4b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]].
+""2018-04-17 22:24:36 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@6e7e0259 testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@13ee97af, testMethod = whenFindByUnknownUsername_thenReturnNull@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5501d1c8 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@652b3733 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@543e710e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6366ebe0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3dfe59d7, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4fc5ccd2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@517cd4b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@214fba74]; rollback [true]
+""2018-04-17 22:24:36 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@6e7e0259 testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@13ee97af, testMethod = whenFindByUnknownUsername_thenReturnNull@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5501d1c8 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@652b3733 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@543e710e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6366ebe0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3dfe59d7, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4fc5ccd2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@517cd4b], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]].
+""2018-04-17 22:24:36 [Thread-5] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@a2df0d5: startup date [Tue Apr 17 22:24:34 SGT 2018]; root of context hierarchy
+""2018-04-17 22:24:36 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:24:36 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:24:36 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 22:24:36 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 22:42:02 [main] INFO  c.i.h.HealthcareBlockchainApplication - Starting HealthcareBlockchainApplication on Lenovo-PC with PID 9616 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 22:42:02 [main] INFO  c.i.h.HealthcareBlockchainApplication - No active profile set, falling back to default profiles: default
+""2018-04-17 22:42:03 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f17938a: startup date [Tue Apr 17 22:42:03 SGT 2018]; root of context hierarchy
+""2018-04-17 22:42:05 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4ad691b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 22:42:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+""2018-04-17 22:42:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-04-17 22:42:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+""2018-04-17 22:42:07 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Brackets\command;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\HashiCorp\Vagrant\bin;C:\Users\Kenneth\Downloads\apache-maven-3.3.9\bin;C:\Users\Kenneth\AppData\Roaming\npm;C:\Users\Kenneth\AppData\Local\Microsoft\WindowsApps;;.]
+""2018-04-17 22:42:07 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-04-17 22:42:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-04-17 22:42:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-04-17 22:42:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-04-17 22:42:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-04-17 22:42:07 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2018-04-17 22:42:07 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+""2018-04-17 22:42:07 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2-console/*]
+""2018-04-17 22:42:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 22:42:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 22:42:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:42:10 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:42:10 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 22:42:10 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 19 ms.
+""2018-04-17 22:42:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 22:42:12 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@132332c2, org.springframework.security.web.context.SecurityContextPersistenceFilter@6dbac484, org.springframework.security.web.header.HeaderWriterFilter@1041e8f0, org.springframework.web.filter.CorsFilter@1bc7f392, org.springframework.security.web.authentication.logout.LogoutFilter@5e9b8ec6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4acba4f2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@60d47a76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7928daf8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ea4eda3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c2e4838, org.springframework.security.web.session.SessionManagementFilter@66a0b9fe, org.springframework.security.web.access.ExceptionTranslationFilter@26215d74, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@735dabdd]
+""2018-04-17 22:42:13 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-04-17 22:42:13 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-04-17 22:42:13 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-04-17 22:42:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path ''
+""2018-04-17 22:42:13 [main] INFO  c.i.h.HealthcareBlockchainApplication - Started HealthcareBlockchainApplication in 11.921 seconds (JVM running for 21.187)
+""2018-04-17 22:44:35 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2f17938a: startup date [Tue Apr 17 22:42:03 SGT 2018]; root of context hierarchy
+""2018-04-17 22:44:35 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-04-17 22:44:35 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-04-17 22:44:35 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:44:35 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 22:44:35 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 22:44:47 [main] INFO  c.i.h.HealthcareBlockchainApplication - Starting HealthcareBlockchainApplication on Lenovo-PC with PID 13736 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 22:44:47 [main] INFO  c.i.h.HealthcareBlockchainApplication - No active profile set, falling back to default profiles: default
+""2018-04-17 22:44:47 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fcc8fdf: startup date [Tue Apr 17 22:44:47 SGT 2018]; root of context hierarchy
+""2018-04-17 22:44:50 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3f807a36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 22:44:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+""2018-04-17 22:44:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-04-17 22:44:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+""2018-04-17 22:44:51 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Brackets\command;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\HashiCorp\Vagrant\bin;C:\Users\Kenneth\Downloads\apache-maven-3.3.9\bin;C:\Users\Kenneth\AppData\Roaming\npm;C:\Users\Kenneth\AppData\Local\Microsoft\WindowsApps;;.]
+""2018-04-17 22:44:51 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-04-17 22:44:52 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-04-17 22:44:52 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-04-17 22:44:52 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-04-17 22:44:52 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-04-17 22:44:52 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2018-04-17 22:44:52 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+""2018-04-17 22:44:52 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2-console/*]
+""2018-04-17 22:44:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 22:44:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 22:44:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:44:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:44:55 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 22:44:55 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 13 ms.
+""2018-04-17 22:44:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 22:44:57 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60af2205, org.springframework.security.web.context.SecurityContextPersistenceFilter@2313d6fa, org.springframework.security.web.header.HeaderWriterFilter@3ea100a7, org.springframework.web.filter.CorsFilter@1b472c5e, org.springframework.security.web.authentication.logout.LogoutFilter@61eb18fa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53ca5973, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3e2ca3fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7060ff94, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7330d5a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45bb5979, org.springframework.security.web.session.SessionManagementFilter@6b2a66cf, org.springframework.security.web.access.ExceptionTranslationFilter@3b70b859, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10ecfb51]
+""2018-04-17 22:44:58 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-04-17 22:44:58 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-04-17 22:44:58 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-04-17 22:44:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path ''
+""2018-04-17 22:44:58 [main] INFO  c.i.h.HealthcareBlockchainApplication - Started HealthcareBlockchainApplication in 11.803 seconds (JVM running for 20.183)
+""2018-04-17 22:49:23 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fcc8fdf: startup date [Tue Apr 17 22:44:47 SGT 2018]; root of context hierarchy
+""2018-04-17 22:49:23 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-04-17 22:49:23 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-04-17 22:49:23 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:49:23 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 22:49:23 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 22:50:16 [main] INFO  c.i.h.HealthcareBlockchainApplication - Starting HealthcareBlockchainApplication on Lenovo-PC with PID 13732 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 22:50:16 [main] INFO  c.i.h.HealthcareBlockchainApplication - No active profile set, falling back to default profiles: default
+""2018-04-17 22:50:17 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f266e7a: startup date [Tue Apr 17 22:50:17 SGT 2018]; root of context hierarchy
+""2018-04-17 22:50:19 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1b89b8ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 22:50:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+""2018-04-17 22:50:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-04-17 22:50:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+""2018-04-17 22:50:20 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Brackets\command;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\HashiCorp\Vagrant\bin;C:\Users\Kenneth\Downloads\apache-maven-3.3.9\bin;C:\Users\Kenneth\AppData\Roaming\npm;C:\Users\Kenneth\AppData\Local\Microsoft\WindowsApps;;.]
+""2018-04-17 22:50:20 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-04-17 22:50:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-04-17 22:50:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-04-17 22:50:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-04-17 22:50:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-04-17 22:50:21 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2018-04-17 22:50:21 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+""2018-04-17 22:50:21 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2-console/*]
+""2018-04-17 22:50:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 22:50:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 22:50:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:50:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 22:50:24 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 22:50:24 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 24 ms.
+""2018-04-17 22:50:25 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 22:50:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@122b9e5b, org.springframework.security.web.context.SecurityContextPersistenceFilter@49782703, org.springframework.security.web.header.HeaderWriterFilter@1db996c4, org.springframework.web.filter.CorsFilter@5873998e, org.springframework.security.web.authentication.logout.LogoutFilter@32e1fb26, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ef2a047, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3cd2c8db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7aa49c94, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5939c5fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@460ae861, org.springframework.security.web.session.SessionManagementFilter@3d67779b, org.springframework.security.web.access.ExceptionTranslationFilter@73e906ce, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12a8fd34]
+""2018-04-17 22:50:27 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-04-17 22:50:27 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-04-17 22:50:27 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-04-17 22:50:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path ''
+""2018-04-17 22:50:27 [main] INFO  c.i.h.HealthcareBlockchainApplication - Started HealthcareBlockchainApplication in 11.284 seconds (JVM running for 19.76)
+""2018-04-17 23:03:05 [http-nio-9191-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2018-04-17 23:03:27 [http-nio-9191-exec-1] ERROR c.i.h.e.GlobalExceptionHandler - Unhandled exception occurred
+"org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:3002/api/org.acme.model.PersonalDetails": Connection reset; nested exception is java.net.SocketException: Connection reset
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:686)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:361)
+	at com.is4302.healthcareblockchain.services.PersonServiceImpl.getPersonalDetails(PersonServiceImpl.java:39)
+	at com.is4302.healthcareblockchain.controllers.MainController.postLogin(MainController.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:204)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:704)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:675)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:84)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:729)
+	... 95 common frames omitted
+"2018-04-17 23:04:44 [http-nio-9191-exec-5] ERROR c.i.h.e.GlobalExceptionHandler - Unhandled exception occurred
+"org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:97)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:79)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:730)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:686)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.is4302.healthcareblockchain.services.PersonServiceImpl.processMCAccess(PersonServiceImpl.java:225)
+	at com.is4302.healthcareblockchain.controllers.PatientController.mcAccess(PatientController.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:881)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:204)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+"2018-04-17 23:09:43 [http-nio-9191-exec-2] ERROR c.i.h.e.GlobalExceptionHandler - Unhandled exception occurred
+"org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:3002/api/org.acme.model.PersonalDetails": Connection reset; nested exception is java.net.SocketException: Connection reset
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:686)
+	at org.springframework.web.client.RestTemplate.getForEntity(RestTemplate.java:361)
+	at com.is4302.healthcareblockchain.services.PersonServiceImpl.getPersonalDetails(PersonServiceImpl.java:39)
+	at com.is4302.healthcareblockchain.controllers.MainController.postLogin(MainController.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:204)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:704)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:647)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:675)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1536)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:84)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:729)
+	... 95 common frames omitted
+"2018-04-17 23:11:12 [http-nio-9191-exec-3] ERROR c.i.h.e.GlobalExceptionHandler - Unhandled exception occurred
+"org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:97)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:79)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:777)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:730)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:686)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at com.is4302.healthcareblockchain.services.PersonServiceImpl.processMCAccess(PersonServiceImpl.java:225)
+	at com.is4302.healthcareblockchain.controllers.PatientController.mcAccess(PatientController.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:881)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:204)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+"2018-04-17 23:11:44 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f266e7a: startup date [Tue Apr 17 22:50:17 SGT 2018]; root of context hierarchy
+""2018-04-17 23:11:44 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-04-17 23:11:44 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-04-17 23:11:44 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 23:11:44 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 23:11:45 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 23:23:57 [main] INFO  c.i.h.HealthcareBlockchainApplication - Starting HealthcareBlockchainApplication on Lenovo-PC with PID 14596 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 23:23:57 [main] INFO  c.i.h.HealthcareBlockchainApplication - No active profile set, falling back to default profiles: default
+""2018-04-17 23:23:57 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69fb7493: startup date [Tue Apr 17 23:23:57 SGT 2018]; root of context hierarchy
+""2018-04-17 23:23:59 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53e4a861] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 23:24:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+""2018-04-17 23:24:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-04-17 23:24:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+""2018-04-17 23:24:01 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_65\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Brackets\command;C:\Users\Kenneth\Desktop\sts-bundle\apache-maven-3.3.9\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Python34;C:\HashiCorp\Vagrant\bin;C:\Users\Kenneth\Downloads\apache-maven-3.3.9\bin;C:\Users\Kenneth\AppData\Roaming\npm;C:\Users\Kenneth\AppData\Local\Microsoft\WindowsApps;;.]
+""2018-04-17 23:24:01 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-04-17 23:24:01 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2018-04-17 23:24:01 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2018-04-17 23:24:01 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2018-04-17 23:24:01 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2018-04-17 23:24:01 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2018-04-17 23:24:01 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+""2018-04-17 23:24:01 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2-console/*]
+""2018-04-17 23:24:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 23:24:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 23:24:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 23:24:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 23:24:04 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 23:24:04 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 14 ms.
+""2018-04-17 23:24:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 23:24:05 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6eac67e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fd9d170, org.springframework.security.web.header.HeaderWriterFilter@51979a60, org.springframework.web.filter.CorsFilter@522e045a, org.springframework.security.web.authentication.logout.LogoutFilter@39562dde, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2efc3bab, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@22dddf27, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10a2c449, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f898057, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f2ae670, org.springframework.security.web.session.SessionManagementFilter@3355995c, org.springframework.security.web.access.ExceptionTranslationFilter@2104c620, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e6b2d80]
+""2018-04-17 23:24:06 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2018-04-17 23:24:06 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+""2018-04-17 23:24:06 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+""2018-04-17 23:24:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path ''
+""2018-04-17 23:24:06 [main] INFO  c.i.h.HealthcareBlockchainApplication - Started HealthcareBlockchainApplication in 10.399 seconds (JVM running for 20.081)
+""2018-04-17 23:24:39 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69fb7493: startup date [Tue Apr 17 23:23:57 SGT 2018]; root of context hierarchy
+""2018-04-17 23:24:39 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2018-04-17 23:24:39 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+""2018-04-17 23:24:39 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 23:24:39 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 23:24:39 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2018-04-17 23:24:54 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Kenneth/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Kenneth/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+""2018-04-17 23:24:54 [main] INFO  c.i.h.HealthcareBlockchainApplicationTests - Starting HealthcareBlockchainApplicationTests on Lenovo-PC with PID 11436 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 23:24:54 [main] INFO  c.i.h.HealthcareBlockchainApplicationTests - No active profile set, falling back to default profiles: default
+""2018-04-17 23:24:56 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$47734d0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2018-04-17 23:24:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2018-04-17 23:24:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2018-04-17 23:24:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 23:24:59 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 23:24:59 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 23:24:59 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 14 ms.
+""2018-04-17 23:25:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2018-04-17 23:25:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28daf506, org.springframework.security.web.context.SecurityContextPersistenceFilter@9408857, org.springframework.security.web.header.HeaderWriterFilter@72c4a3aa, org.springframework.web.filter.CorsFilter@4662752a, org.springframework.security.web.authentication.logout.LogoutFilter@5329f6b3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f213a2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@656c5c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f09e6b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5175d9ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@693f2213, org.springframework.security.web.session.SessionManagementFilter@33e3bd2e, org.springframework.security.web.access.ExceptionTranslationFilter@7be94cd6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b4814d0]
+""2018-04-17 23:25:03 [main] INFO  c.i.h.HealthcareBlockchainApplicationTests - Started HealthcareBlockchainApplicationTests in 9.988 seconds (JVM running for 11.737)
+""2018-04-17 23:25:04 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.is4302.healthcareblockchain.UserRepositoryTest], using SpringBootContextLoader
+""2018-04-17 23:25:04 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.is4302.healthcareblockchain.UserRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2018-04-17 23:25:04 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.is4302.healthcareblockchain.UserRepositoryTest]: UserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+""2018-04-17 23:25:04 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.is4302.healthcareblockchain.HealthcareBlockchainApplication for test class com.is4302.healthcareblockchain.UserRepositoryTest
+""2018-04-17 23:25:04 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+""2018-04-17 23:25:04 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@55053f81, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1fee4278, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@51132514, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@20864cd1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c839677, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3193e21d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@79604abe, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@6b126187, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2b6262bc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5cffec7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7e81617a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6e73974, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3e28dc96, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@44eb2452]
+""2018-04-17 23:25:05 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Kenneth/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Kenneth/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+""2018-04-17 23:25:05 [main] INFO  c.i.h.UserRepositoryTest - Starting UserRepositoryTest on Lenovo-PC with PID 11436 (started by Kenneth in C:\Users\Kenneth\Downloads\NUS\YEAR 4 SEM 2\IS4302\Lab\healthcare-blockchain\healthcare-blockchain)
+""2018-04-17 23:25:05 [main] INFO  c.i.h.UserRepositoryTest - No active profile set, falling back to default profiles: default
+""2018-04-17 23:25:05 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@14485747: startup date [Tue Apr 17 23:25:05 SGT 2018]; root of context hierarchy
+""2018-04-17 23:25:05 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+""2018-04-17 23:25:05 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+""2018-04-17 23:25:05 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:4740f475-9d03-4c2c-8564-55d647b7651e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+""2018-04-17 23:25:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2018-04-17 23:25:05 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 23:25:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql]
+""2018-04-17 23:25:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kenneth/Downloads/NUS/YEAR%204%20SEM%202/IS4302/Lab/healthcare-blockchain/healthcare-blockchain/target/classes/data.sql] in 9 ms.
+""2018-04-17 23:25:06 [main] INFO  c.i.h.UserRepositoryTest - Started UserRepositoryTest in 1.12 seconds (JVM running for 14.32)
+""2018-04-17 23:25:06 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@39a3984c testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@4404a6b, testMethod = whenFindByUsername_thenReturnUser@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@671da0f9 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@4d2f9e3c key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@15bfd87, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3d0f8e03, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@30c7be6f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@41322ad4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@76a4d6c], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@7e1d8d41]; rollback [true]
+""2018-04-17 23:25:06 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@39a3984c testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@4404a6b, testMethod = whenFindByUsername_thenReturnUser@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@671da0f9 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@4d2f9e3c key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@15bfd87, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3d0f8e03, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@30c7be6f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@41322ad4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@76a4d6c], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]].
+""2018-04-17 23:25:06 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@39a3984c testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@cf984d9, testMethod = whenFindByUnknownUsername_thenReturnNull@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@671da0f9 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@4d2f9e3c key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@15bfd87, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3d0f8e03, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@30c7be6f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@41322ad4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@76a4d6c], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@7e1d8d41]; rollback [true]
+""2018-04-17 23:25:06 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@39a3984c testClass = UserRepositoryTest, testInstance = com.is4302.healthcareblockchain.UserRepositoryTest@cf984d9, testMethod = whenFindByUnknownUsername_thenReturnNull@UserRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@671da0f9 testClass = UserRepositoryTest, locations = '{}', classes = '{class com.is4302.healthcareblockchain.HealthcareBlockchainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@4d2f9e3c key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@15bfd87, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3d0f8e03, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@30c7be6f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@41322ad4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@76a4d6c], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]].
+""2018-04-17 23:25:06 [Thread-5] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@14485747: startup date [Tue Apr 17 23:25:05 SGT 2018]; root of context hierarchy
+""2018-04-17 23:25:06 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 23:25:06 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2018-04-17 23:25:06 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2018-04-17 23:25:06 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+"

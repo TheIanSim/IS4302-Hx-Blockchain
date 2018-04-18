@@ -1,0 +1,13 @@
+{
+  "$class": "org.acme.model.MedicalInfo",
+  "infoId": "INFO001",
+  "owner": "resource:org.acme.model.Patient#PAITIENT001",
+  "issuer": "resource:org.acme.model.Practitioner#DOCTOR001",
+  "date": "02/02/2018",
+  "diagnosis": "Back pain",
+  "testImages": [],
+  "labReports": [],
+  "drugAllergies": [
+    "Allergic to Penicillin"
+  ]
+}

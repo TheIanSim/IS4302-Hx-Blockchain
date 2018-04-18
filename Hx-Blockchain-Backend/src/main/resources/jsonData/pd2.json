@@ -1,0 +1,16 @@
+{
+  "$class": "org.acme.model.PersonalDetails",
+  "detailsId": "Details002",
+  "owner": "resource:org.acme.model.Practitioner#DOCTOR002",
+  "firstName": "Ian",
+  "lastName": "Sim",
+  "email": "ian@hx.com",
+  "dob": "03/04/1993",
+  "address": {
+    "$class": "org.acme.model.Address",
+    "street": "71 Robinson Road",
+    "postcode": "324229",
+    "country": "Singapore"
+  },
+  "contact": "67857899"
+}

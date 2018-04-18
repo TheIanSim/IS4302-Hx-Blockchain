@@ -1,0 +1,15 @@
+{
+  "$class": "org.acme.model.Prescription",
+  "preId": "PRE001",
+  "issuee": "resource:org.acme.model.Patient#PATIENT001",
+  "issuer": "resource:org.acme.model.Practitioner#DOCTOR001",
+  "date": "02/02/2018",
+  "drugs": [
+    {
+      "$class": "org.acme.model.Drug",
+      "drugName": "Tylenol",
+      "drugQty": 2
+    }
+  ],
+  "fulfilled": true
+}

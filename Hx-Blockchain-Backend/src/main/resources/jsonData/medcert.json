@@ -1,0 +1,9 @@
+{
+  "$class": "org.acme.model.MedicalCert",
+  "mcId": "MC001",
+  "issuee": "resource:org.acme.model.Patient#PAITENT001",
+  "issuer": "resource:org.acme.model.Practitioner#DOCTOR001",
+  "startDate": "02/02/2018",
+  "duration": 1,
+  "remark": "Excuse for 1 day."
+}

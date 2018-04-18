@@ -1,0 +1,6 @@
+{
+  "$class": "org.acme.model.Employer",
+  "employerId": "EM001",
+  "name": "IBM",
+  "mcPermissions": ["ADMIN1"]
+}

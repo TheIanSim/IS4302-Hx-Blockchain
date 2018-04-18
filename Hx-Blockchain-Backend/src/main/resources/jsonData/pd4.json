@@ -1,0 +1,16 @@
+{
+  "$class": "org.acme.model.PersonalDetails",
+  "detailsId": "Details004",
+  "owner": "resource:org.acme.model.Practitioner#DOCTOR001",
+  "firstName": "Alice",
+  "lastName": "Black",
+  "email": "alice@hx.com",
+  "dob": "09/08/1994",
+  "address": {
+    "$class": "org.acme.model.Address",
+    "street": "100 Orchard Road",
+    "postcode": "665890",
+    "country": "Singapore"
+  },
+  "contact": "87446290"
+}

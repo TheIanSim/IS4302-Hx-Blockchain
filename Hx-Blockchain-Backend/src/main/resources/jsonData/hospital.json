@@ -1,0 +1,6 @@
+{
+  "$class": "org.acme.model.Hospital",
+  "hospitalId": "HOS001",
+  "hospitalName": "Mont E Hospital",
+  "regNum": "987234"
+}

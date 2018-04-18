@@ -1,0 +1,7 @@
+{
+  "$class": "org.acme.model.Patient",
+  "prePermissions": ["ADMIN1"],
+  "mcPermissions": ["ADMIN1"],
+  "infoPermissions": ["ADMIN1"],
+  "Id": "PATIENT002"
+}

@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, .App {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+}
+
+.Patient-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  background-color: whitesmoke;
+}
+
+
+/*Personal details ===========================================*/
+
+.PersonalDetails {
+  background-color: #0B3C5D;
+  margin: 1.5rem;
+  display: inline-grid;
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: 5px 5px grey;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.PersonalDetails h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.PersonalDetails h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.PersonalDetails ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.PersonalDetails li {
+  text-transform: capitalize;
+  text-align: left;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.PersonalDetails-btn {
+  border: 1px solid whitesmoke;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.PersonalDetails-btn:hover {
+  background-color: #00000080;
+}
+
+.avatar {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  margin-top: 4rem;
+}
+
+/*Navigation ===========================================*/
+
+.Navigation {
+  background-color: rgb(94, 20, 29);
+  margin: 1.5rem;
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: 5px 5px grey;
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+}
+
+.Navigation h1 {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.Navigation ul {
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.Navigation li {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid whitesmoke;
+  letter-spacing: 1px;
+}
+
+.Navigation li:hover {
+  background-color: #00000080;
+}
+
+.active {
+  background-color: #00000080;
+}
+
+.nav-logo {
+  margin-top: 1rem;
+  width: 50%;
+  border-radius: 100%;
+}
+
+/*Dashboard ===========================================*/
+
+
+.Dashboard {
+  background-color:	lightgray;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  box-shadow: 5px 5px grey;
+  color: rgb(58, 58, 58);
+  padding: 1rem;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.Dashboard h1 {
+  text-transform: uppercase;
+}
+
+/*Permissions ===========================================*/
+
+.Permissions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+}
+
+
+.Perm-grid-item {
+  border: 2px solid rgb(58, 58, 58);
+  background-color:  whitesmoke;
+  margin: 1rem;
+  box-sizing: border-box;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.Perm-grid-item h1 {
+  font-weight: 400;
+  font-size: 1.6em;
+  text-transform: capitalize;
+  font-weight: 100;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/*Name Card ===========================================*/
+
+.NameCard {
+  background-color: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: left;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.NameCard h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.NameCard h3 {
+  text-transform: capitalize;
+}
+
+.NameCard-btn {
+  float: right;
+  border: none;
+  width: 100px;
+  font-family: inherit;
+  background: #3a102d;
+  color: whitesmoke;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.NameCard-btn:hover {
+  background: grey;
+}
+
+/*Prescription Card ===========================================*/
+
+.PrescriptionCard {
+  background-color: #ffffffa4;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.PrescriptionCard h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.fulfilled {
+  background-color: rgba(134, 42, 42, 0.507);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/*Login ===========================================*/
+
+.LoginContainer {
+  overflow: hidden;
+}
+
+.LoginBox {
+  margin: 100px auto;
+  width: 400px;
+  height: 500px;
+  background: #063c53;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 5px 5px grey;
+}
+
+.LoginBox h1 {
+  color: whitesmoke;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.LoginInput {
+  border: none;
+  width: 250px;
+  height: 40px;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.LoginBtn {
+  border: none;
+  width: 250px;
+  height: 40px;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: inherit;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.LoginBtn:hover {
+  background-color: #00000080;
+  color: whitesmoke;
+}
+
+
+/*Edit Info ===========================================*/
+
+.EditInfo {
+  border: 2px solid rgb(58, 58, 58);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  display: block;
+  height: 60vh;
+}
+
+.EditInfo h3{
+  text-transform: uppercase;
+  float: left;
+  font-size: 1.4rem;
+  padding-top: 1.4rem;
+}
+
+
+.EditInfo-btn {
+  border: 2px solid rgb(58, 58, 58);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 10rem;
+  color: rgb(58, 58, 58);
+  font-weight: 700;
+}
+
+.EditInfo-btn:hover {
+  background-color: #00000080;
+}
+
+.EditInfo input {
+  border: none;
+  width: 250px;
+  height: 40px;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: inherit;
+  box-sizing: border-box; 
+  float: right;
+}
+
+.EditInfoItem {
+  width:400px;
+  clear: both;
+}
+
+
+/* Record Card ================*/
+
+.RecordCardList {
+  margin-top: 10px;
+}
+
+.RecordCardList li {
+   list-style: none;
+ }
+
+ /* Input Component ==================*/
+
+ .inputComponent {
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+ }
+
+
+
+ .inputComponent input {
+  border: 2px solid black;
+  margin: 2px;
+  width: 80%;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  box-sizing: border-box; 
+}
+
+.inputComponent button {
+  background: whitesmoke;
+  border: 1px solid whitesmoke;
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 0.5rem;
+  width: 80%;
+}
+
+.inputComponent button:hover {
+  background-color: #00000080;
+}
+
+/* Modal =============*/
+
+.modal {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal h1{
+  margin-top: 200px;
+  padding: 2rem;
+}
+
+.modalButton {
+  position:absolute;
+  bottom:0;
+  width: 100%;
+}
+
+.modal button {
+  border: 1px solid black;
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.modal button:hover {
+  background-color: #00000080;
+}
+
+.inputComponentSelected {
+  color: red;
+}
+
+.InputContainer {
+  border: 2px solid rgb(58, 58, 58);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  display: block;
+  height: auto;
+}
+
+.InputContainer input {
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: inherit;
+  box-sizing: border-box; 
+  height: 60px;
+}
+.drugInput-container {
+  text-align: left;
+}
+
+.drugInput-container h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.drugInput-container input{
+  width: 60%;
+}
+
+.Drug {
+  background: white;
+  margin-top: 1rem;
+  min-height: 50px;
+}
+
+.Drug ul {
+  list-style: none;
+}
+.Drug li {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 0.6rem;
+}
+
+.Drug h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+
+/* Spinner ===================*/
+
+.sk-folding-cube {
+  margin: 20px auto;
+  margin-top: 40vh;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(155, 219, 245);
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}

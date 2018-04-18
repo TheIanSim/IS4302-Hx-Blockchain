@@ -1,0 +1,10 @@
+{
+  "$class": "org.acme.model.Practitioner",
+  "type": "DOCTOR",
+  "licenseID": "LC023443",
+  "infoPermissions": ["ADMIN1"],
+  "prePermissions": ["ADMIN1"],
+  "mcPermissions": ["ADMIN1"],
+  "hospital": "resource:org.acme.model.Hospital#HOS001",
+  "Id": "DOCTOR001"
+}
