@@ -52,3 +52,15 @@ In the terminal in composer-playground, run the following commands to start the 
 In a new terminal in your host OS, start the front end server by going into the Hx-Blockchain-Frontend folder, then run "npm install" then "npm run build", followed by "npm start".
 
 The HxBlockchain application can be accessed at http://localhost:3010
+
+Usernames:
+Doctor001
+Doctor002
+patient001
+patient002
+pharm001
+emp001
+
+Password is "pp" for all users.
+
+
