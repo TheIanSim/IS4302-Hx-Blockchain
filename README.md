@@ -1,3 +1,9 @@
+# Hx Blockchain Medical Record
+
+## About
+Hx is a Blockchain-based medical records and archiving solution built on the permissioned Hyperledger Fabric blockchain framework to ensure security, privacy, provenance and immutability in the medical field. Hx was created as a project for IS4302 Blockchain and distributed ledger technologies and is built on Hyperledger Composer, React and Spring (Java backend).
+
+
 Download the vagrant environment from https://github.com/suenchunhui/fabric-tutorial-vagrant.
 Ensure that ports 3001-3009 are mapped in the vagrantfile, if not, edit the vagrantfile to add the port mappings.
 Start vagrant with the command "vagrant up" in the directory with the vagrant file.
